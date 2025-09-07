@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills — Nadia Hussain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="skills">
+  <header>
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 40px;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo .mark {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .logo .mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    .logo:hover .mark {
+      transform: scale(1.1);
+    }
+
+    .logo:hover img {
+      filter: grayscale(0%);
+    }
+
+    .name h1 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 2px;
+      letter-spacing: 1px;
+    }
+
+    .name p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin-left: 10px;
+      }
+    }
+  </style>
+
+  <div class="logo">
+    <div class="mark">
+      <img src="C:\Users\deepe\Downloads\image.jpeg.jpeg" alt="Profile" />
+    </div>
+    <div class="name">
+      <h1>NADIA HUSSAIN KHAN</h1>
+      <p>• Lahore, Pakistan</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="internships.html">Internships</a>
+  </nav>
+</header>
+
+  <div class="page">
+  <h3>Skills</h3>
+  <ul>
+    <li><strong>🌐 Web Development:</strong> Proficient in HTML, CSS, JavaScript, PHP, and SQL for building dynamic, responsive websites.</li>
+    <li><strong>🎨 Design & Creativity:</strong> Skilled in modern web design principles with a strong eye for aesthetics and user experience.</li>
+    <li><strong>🤝 Soft Skills:</strong> Excellent communication, adaptability, time management, and teamwork abilities for collaborative success.</li>
+    <li><strong>💡 Innovative Thinking:</strong> Passion for creative problem-solving and delivering unique solutions.</li>
+  </ul>
+
+  <h3>Interests</h3>
+  <p>🎭 <em>Art & Creativity</em> | 🤖 <em>Robotics</em> | 📚 <em>Continuous Learning</em> | 🗄️ <em>Database Systems</em> | 🌐 <em>Networking</em></p>
+</div>
+</body>
+</html>

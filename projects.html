@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Nadia Hussain</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg,#6b8bff,#9b6bff);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 40px;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(8px);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo .mark {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .name h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+      transform: scale(1.1);
+    }
+    .page {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .page h3 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      padding: 20px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #ff6b6b, #ffb36b);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:nth-child(2) { background: linear-gradient(135deg,#6b8bff,#9b6bff); }
+    .project:nth-child(3) { background: linear-gradient(135deg,#6bffb3,#00c6ff); }
+    .project:nth-child(4) { background: linear-gradient(135deg,#ff6bd5,#ff6b8b); }
+    .project:nth-child(5) { background: linear-gradient(135deg,#f9d423,#ff4e50); }
+    .project:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .project h4 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .project p {
+      margin: 0;
+      font-size: 14px;
+      color: #f9f9f9;
+    }
+  </style>
+</head>
+<body class="projects">
+ <header>
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 40px;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo .mark {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .logo .mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    .logo:hover .mark {
+      transform: scale(1.1);
+    }
+
+    .logo:hover img {
+      filter: grayscale(0%);
+    }
+
+    .name h1 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 2px;
+      letter-spacing: 1px;
+    }
+
+    .name p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin-left: 10px;
+      }
+    }
+  </style>
+
+  <div class="logo">
+    <div class="mark">
+      <img src="C:\Users\deepe\Downloads\image.jpeg.jpeg" alt="Profile" />
+    </div>
+    <div class="name">
+      <h1>NADIA HUSSAIN KHAN</h1>
+      <p>Web Developer • Lahore, Pakistan</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="internships.html">Internships</a>
+  </nav>
+</header>
+
+  <div class="page">
+    <h3>Projects</h3>
+    <div class="projects-grid">
+      
+      <div class="project">
+        <h4>WordPress Website — Vlogging Website</h4>
+        <p>Designed and maintained a responsive WordPress site with custom themes and SEO optimizations. Integrated multimedia features and implemented security measures.</p>
+      </div>
+
+      <div class="project">
+        <h4>Responsive Restaurant Website</h4>
+        <p>Built a responsive restaurant site using HTML, CSS, JS, and PHP. Included contact form, dynamic menu, and SQL integration.</p>
+      </div>
+
+      <div class="project">
+        <h4>Portfolio Website</h4>
+        <p>Developed a personal portfolio website using HTML, CSS, and JavaScript. Implemented responsive design, smooth navigation, and sections for skills, projects, and contact.</p>
+      </div>
+
+      <div class="project">
+        <h4>Weather API Project</h4>
+        <p>Created a weather application using JavaScript and a third-party API. Integrated real-time weather data, location-based search, and dynamic UI updates.</p>
+      </div>
+
+      <div class="project">
+        <h4>Other Student Projects</h4>
+        <p>Small CRUD apps, forms, and automation scripts demonstrating full-stack fundamentals.</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certifications — Nadia Hussain</title>
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+    .certifications-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px; /* reduced spacing between cards */
+  margin-top: 12px;
+}
+
+.cert-card {
+  background: linear-gradient(135deg, #6b8bff, #9b6bff);
+  padding: 14px; /* smaller padding for compact look */
+  border-radius: 14px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+.cert-icon {
+  display: block;
+  font-size: 28px; /* slightly smaller */
+  margin-bottom: 6px;
+}
+
+.cert-card h4 {
+  margin: 6px 0 2px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cert-card p {
+  font-size: 13px;
+  color: #eee;
+  margin: 0;
+}
+
+  </style>
+</head>
+<body class="education">
+ <header>
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 40px;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo .mark {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .logo .mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    .logo:hover .mark {
+      transform: scale(1.1);
+    }
+
+    .logo:hover img {
+      filter: grayscale(0%);
+    }
+
+    .name h1 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 2px;
+      letter-spacing: 1px;
+    }
+
+    .name p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin-left: 10px;
+      }
+    }
+  </style>
+
+  <div class="logo">
+    <div class="mark">
+      <img src="C:\Users\deepe\Downloads\image.jpeg.jpeg" alt="Profile" />
+    </div>
+    <div class="name">
+      <h1>NADIA HUSSAIN KHAN</h1>
+      <p>• Lahore, Pakistan</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="internships.html">Internships</a>
+  </nav>
+</header>
+
+ <div class="page">
+  <h3>Certifications</h3>
+  
+  <div class="certifications-container">
+
+    <div class="cert-card">
+      <span class="cert-icon">🎯</span>
+      <h4>Virtual Assistant</h4>
+      <p>ExtremeCommerce — 2023</p>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-icon">💻</span>
+      <h4>Web Development</h4>
+      <p>PeakSolutionsCollege — 2023</p>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-icon">🛡️</span>
+      <h4>Cyber Security</h4>
+      <p>NASTP Delta Institute — 2024</p>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-icon">🤖</span>
+      <h4>AI / ML</h4>
+      <p>Edureka — 2024</p>
+    </div>
+
+    <div class="cert-card">
+      <span class="cert-icon">🗄️</span>
+      <h4>DBMS</h4>
+      <p>Edureka — 2025</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
